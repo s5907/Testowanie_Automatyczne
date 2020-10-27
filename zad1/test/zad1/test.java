@@ -39,6 +39,7 @@ public class test {
 	public void testResults() {
 		int result = rp.ResultPoints(20, 10);
 		assertEquals(200,result);
+		
 		System.out.println("Test 0");
 		
 	}
@@ -47,6 +48,7 @@ public class test {
 	public void testResults1() {
 		int result = rp.ResultPoints(10, 20);
 		assertEquals(50,result);
+		
 		System.out.println("Test 1");
 		
 	}
@@ -68,6 +70,7 @@ public class test {
 		int wr = rp.wr;
 		int results = rp.result;
 		assertTrue("rekord swiata wiekszy od wyniku ",wr < results);
+		
 		System.out.println("Test 3");
 		
 	}

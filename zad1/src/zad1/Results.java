@@ -5,6 +5,7 @@ public class Results {
 	public int wr;
 	public Object points;
 	//metoda przelicza wynik w stosunku do rekodu swiata na dystansie
+	
 	public int ResultPoints (int result, int wr) {
 		result = Math.abs(result);
 		wr = Math.abs(wr);
