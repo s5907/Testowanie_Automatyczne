@@ -24,9 +24,9 @@ public class Results {
 		 points = (result * 100)/wr ;
 		if (result > wr)
 		 points =  (result * 100)/wr ;
-		if (result == wr && result!=0 && wr!=0)
+		if (result!=0 && wr!=0 && result == wr ) {
 			 points =  100 ;
-	
+		}
 		
 		
 		return (int) points;

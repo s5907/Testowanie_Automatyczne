@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//testy
+
 public class test {
 	
 	private NWD nwd;
@@ -16,21 +16,21 @@ public class test {
 	public void setUp() {
 		nwd = new NWD();
 		rp = new Results();
-		System.out.println("Before");
+	//	System.out.println("Before");
 	}
 	
 	@After
 	public void tearDown() {
 		nwd=null;
 		rp=null;
-		System.out.println("After");
+	//	System.out.println("After");
 	}
 
 	@Test
 	public void testNWD() {
 		int result = nwd.NWD(4, 2);
 		assertEquals(2,result);
-		System.out.println("Test 1");
+	//	System.out.println("Test 1");
 		
 	}
 	
@@ -40,7 +40,7 @@ public class test {
 		int result = rp.ResultPoints(20, 10);
 		assertEquals(200,result);
 		
-		System.out.println("Test 0");
+	//	System.out.println("Test 0");
 		
 	}
 	@Test
@@ -49,7 +49,7 @@ public class test {
 		int result = rp.ResultPoints(10, 20);
 		assertEquals(50,result);
 		
-		System.out.println("Test 1");
+	//	System.out.println("Test 1");
 		
 	}
 	@Test
@@ -57,7 +57,7 @@ public class test {
 	public void testResults2() {
 		int result = rp.ResultPoints(4, 4);
 		assertEquals(100,result);
-		System.out.println("Test 2"+ result);
+//		System.out.println("Test 2"+ result);
 		
 	}
 	
@@ -71,7 +71,7 @@ public class test {
 		int results = rp.result;
 		assertTrue("rekord swiata wiekszy od wyniku ",wr < results);
 		
-		System.out.println("Test 3");
+	//	System.out.println("Test 3");
 		
 	}
 	@Test
@@ -83,7 +83,7 @@ public class test {
 		int wr = rp.wr;
 		int results = rp.result;
 		assertTrue("rekord swiata mniejszy od wyniku",wr > results);
-		System.out.println("Test 4");
+//		System.out.println("Test 4");
 		
 	}
 	@Test
@@ -95,23 +95,23 @@ public class test {
 		int wr = rp.wr;
 		int results = rp.result;
 		assertFalse("rekord swiata ró¿ny od wyniku",wr == results);
-		System.out.println("Test 5");
+//		System.out.println("Test 5");
 		
 	}
 	@Test
 public void testResults6() {
 		//test wartosci null wyniku metdy wymaga wy³aczenia IllegalArgumentException
-		int result = rp.ResultPoints(0, 0);
+		int result = rp.ResultPoints(1, 1);
 		assertNotNull("punkty maja wartosæ null",result );
-		System.out.println("Test 6"+ result);
+//		System.out.println("Test 6"+ result);
 		
 	}
 	@Test
 public void testResults7() {
 		//test wartosci null wyniku metdy wymaga wy³aczenia IllegalArgumentException
-	int result = rp.ResultPoints(1, 1);
+	int result = rp.ResultPoints(0, 0);
 	assertNull("punkty maja wartosæ null",result );
-	System.out.println("Test 7"+ result);
+//	System.out.println("Test 7"+ result);
 	
 }
 }
