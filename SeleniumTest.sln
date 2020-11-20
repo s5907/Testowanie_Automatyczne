@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTest", "SeleniumTest\SeleniumTest.csproj", "{6ABB73B5-DDB0-4494-AB93-097752C03074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkTests", "..\..\..\Desktop\Prywatne\APJ\cw2\LightPomFrameworkTutorial-master\LightPomFrameworkTutorial-master\FrameworkTests\FrameworkTests.csproj", "{FF892CA2-818D-4B0C-8589-D32D41137D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "..\..\..\Desktop\Prywatne\APJ\cw2\LightPomFrameworkTutorial-master\LightPomFrameworkTutorial-master\Framework\Framework.csproj", "{33455557-E10F-44A4-9E41-951A7D36598B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ABB73B5-DDB0-4494-AB93-097752C03074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABB73B5-DDB0-4494-AB93-097752C03074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABB73B5-DDB0-4494-AB93-097752C03074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABB73B5-DDB0-4494-AB93-097752C03074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF892CA2-818D-4B0C-8589-D32D41137D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF892CA2-818D-4B0C-8589-D32D41137D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF892CA2-818D-4B0C-8589-D32D41137D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF892CA2-818D-4B0C-8589-D32D41137D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33455557-E10F-44A4-9E41-951A7D36598B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33455557-E10F-44A4-9E41-951A7D36598B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33455557-E10F-44A4-9E41-951A7D36598B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33455557-E10F-44A4-9E41-951A7D36598B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BACBA91-AE8B-470C-AD6B-14B61F3E37F5}
+	EndGlobalSection
+EndGlobal
