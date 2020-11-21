@@ -6,20 +6,26 @@ using System.IO;
 using System.Reflection;
 using Framework;
 using OpenQA.Selenium.Firefox;
+using NLog;
 
 namespace SeleniumTest
 {
     internal class GogleSearch
     {
-        
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         public GogleSearch()
         {
              var Driver = GetChromeDriver();
-           // var Driver = GetFirefoxDriver();
-           //var Driver = new FirefoxDriver();
+            var info = "Test wyszukiwanie stron google  ";
+            // var Driver = GetFirefoxDriver();
+            //var Driver = new FirefoxDriver();
+            logger.Info(Environment.NewLine + info);
             Driver.Navigate().GoToUrl("https://google.pl");
+            logger.Info(DateTime.Now + Environment.NewLine + "Web Driver wszedł na strone: " + Driver.Url);
 
-           //IWebDriver Driver = new FirefoxDriver();
+
+            //IWebDriver Driver = new FirefoxDriver();
             //Driver.Manage().Window.Maximize();
             //Driver.Navigate().GoToUrl("https://google.pl");
 
@@ -27,9 +33,13 @@ namespace SeleniumTest
 
             Driver.Manage().Window.Maximize();
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(3));
+            logger.Info("znalezienie pola wusukiwanie " + DateTime.Now + Environment.NewLine);
+
             var link = Driver.FindElement(By.Name("q"));
             link.SendKeys("testing with selenium"+ Keys.Enter);
-            
+            logger.Info("wpisanie wyszukiwanego tekstu" + DateTime.Now + Environment.NewLine);
+            logger.Info("KONIC Testu " + info + DateTime.Now + Environment.NewLine);
+
         }
 
         public static IWebDriver GetFirefoxDriver()
