@@ -92,6 +92,7 @@ namespace SeleniumTest
             // Driver.FindElement(By.CssSelector("[css='.button:nth - child(4) img']"));
 
             Driver.Navigate().GoToUrl("https://www.camino.pl/koszyk.html");
+            Driver.Close();
 
         }
 

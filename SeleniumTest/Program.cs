@@ -21,13 +21,13 @@ namespace SeleniumTest
 
             ;
 
-           // new SeleniuCaminoLog();
-           // new SeleniuCaminoAddProd();
+            new SeleniuCaminoLog();
+            new SeleniuCaminoAddProd();
     
             new SeleniuCaminoAddProdLogClient();
 
-            //new GogleSearch();
-            // new FacebookLogIn();
+            new GogleSearch();
+             new FacebookLogIn();
 
            
 

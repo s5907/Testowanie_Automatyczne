@@ -33,13 +33,13 @@ namespace SeleniumTest
 
             Driver.Manage().Window.Maximize();
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(3));
-            logger.Info("znalezienie pola wusukiwanie " + DateTime.Now + Environment.NewLine);
+            logger.Info("znalezienie pola wyszukiwania " + DateTime.Now + Environment.NewLine);
 
             var link = Driver.FindElement(By.Name("q"));
             link.SendKeys("testing with selenium"+ Keys.Enter);
             logger.Info("wpisanie wyszukiwanego tekstu" + DateTime.Now + Environment.NewLine);
             logger.Info("KONIC Testu " + info + DateTime.Now + Environment.NewLine);
-
+            Driver.Close();
         }
 
         public static IWebDriver GetFirefoxDriver()

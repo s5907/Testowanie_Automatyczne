@@ -24,7 +24,7 @@ namespace SeleniumTest
             var log = Driver.FindElement(By.XPath("//*[@alt='Zaloguj']"));
             ///var log= Driver.FindElements(By.ClassName("button" )[1]); ;
             log.Click();
-            
+            Driver.Close();
         }
 
         public static IWebDriver GetChromeDriver()
