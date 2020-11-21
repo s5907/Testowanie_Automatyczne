@@ -1,4 +1,12 @@
-﻿Odpalanie scenaruszy plik Progarm.cs
+﻿Odpalanie scenaruszy plik Progarm.cs ptzrz odkomentowanie :
+SeleniuCaminoLog();
+new SeleniuCaminoAddProd();
+new SeleniuCaminoAddProdLogClient();
+new GogleSearch();
+new FacebookLogIn();
+
+logi lestów:
+SeleniumTest\bin\Debug\logs
 
 Scenariusz 1 lotawanie sklep Camino.pl 
  Klasa  SeleniuCaminoLog();
@@ -50,9 +58,10 @@ Scenariusz 1 lotawanie sklep Camino.pl
 
   Testy przegladarek Chrome Firefxox IE Eage:
   w kalsie program odkomować testy 
-  new UsingFirefox();
-  new UsingChrome();
-  new UsingEage();
+  new FireFoxTesting();
+  new ChromeTesting();
+  new EageTesting();
+           
   1. Powieksz okno
   2. Przejdz do  "Google"
   3. znajdz element

@@ -20,17 +20,20 @@ namespace SeleniumTest
         {
 
             new SeleniuCaminoLog();
+
             new SeleniuCaminoAddProd();
 
             new SeleniuCaminoAddProdLogClient();
 
-             new GogleSearch();
+            new GogleSearch();
 
-             new FacebookLogIn();
+            new FacebookLogIn();
 
-            //new UsingFirefox();
-           // new UsingChrome();
-          //  new UsingEage();
+            //uzycie przegladarek
+            //new FireFoxTesting();
+            new ChromeTesting();
+            //new EageTesting();
+           
 
 
 

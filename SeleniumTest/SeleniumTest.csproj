@@ -63,7 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Browser.cs" />
+    <Compile Include="ChromeTesting.cs" />
+    <Compile Include="EageTesting.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="FacebookLogIn.cs" />
+    <Compile Include="FireFoxTesting.cs" />
     <Compile Include="GogleSearch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,9 +76,6 @@
     <Compile Include="SeleniuCaminoAddProdLogClient.cs" />
     <Compile Include="SeleniuCaminoLog.cs" />
     <Compile Include="test1.cs" />
-    <Compile Include="UsingChrome.cs" />
-    <Compile Include="UsingEage.cs" />
-    <Compile Include="UsingFirefox.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
