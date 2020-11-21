@@ -48,6 +48,18 @@ Scenariusz 1 lotawanie sklep Camino.pl
   4 wpisanie hasla uzytkownika testowego
   5 zalogowanie do portalu
 
+  Testy przegladarek Chrome Firefxox IE Eage:
+  w kalsie program odkomować testy 
+  new UsingFirefox();
+  new UsingChrome();
+  new UsingEage();
+  1. Powieksz okno
+  2. Przejdz do  "Google"
+  3. znajdz element
+  4. wpisz tekst wysukiwania
+  5. znajdz przycisk
+  6. zatwiedz wyszukiwanie
+  7. znajdz element
 
 
 

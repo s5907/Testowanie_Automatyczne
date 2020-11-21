@@ -19,27 +19,31 @@ namespace SeleniumTest
         static void Main(string[] args)
         {
 
-            ;
-
             new SeleniuCaminoLog();
             new SeleniuCaminoAddProd();
-    
+
             new SeleniuCaminoAddProdLogClient();
 
-            new GogleSearch();
+             new GogleSearch();
+
              new FacebookLogIn();
 
-           
+            //new UsingFirefox();
+           // new UsingChrome();
+          //  new UsingEage();
+
+
+
 
         }
 
 
 
 
-//        public static IWebDriver GetChromeDriver()
-//        {
-//            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-//            return new ChromeDriver(outPutDirectory);
-//        }
+        //        public static IWebDriver GetChromeDriver()
+        //        {
+        //            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        //            return new ChromeDriver(outPutDirectory);
+        //        }
     }
 }

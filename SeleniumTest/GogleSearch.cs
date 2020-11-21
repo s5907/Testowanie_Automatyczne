@@ -4,9 +4,9 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.IO;
 using System.Reflection;
-using Framework;
 using OpenQA.Selenium.Firefox;
 using NLog;
+
 
 namespace SeleniumTest
 {
@@ -17,6 +17,9 @@ namespace SeleniumTest
         public GogleSearch()
         {
              var Driver = GetChromeDriver();
+            // new Browser();
+            //var Driver = GetFirefoxDriver();
+            //var Driver = new FirefoxDriver();
             var info = "Test wyszukiwanie stron google  ";
             // var Driver = GetFirefoxDriver();
             //var Driver = new FirefoxDriver();
@@ -42,10 +45,10 @@ namespace SeleniumTest
             Driver.Close();
         }
 
-        public static IWebDriver GetFirefoxDriver()
-        {
-            return new FirefoxDriver();
-        }
+       // public static IWebDriver GetFirefoxDriver()
+       // {
+       //     return new FirefoxDriver();
+       // }
 
         public static IWebDriver GetChromeDriver()
         {

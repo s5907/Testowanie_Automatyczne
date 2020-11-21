@@ -6,7 +6,7 @@ using System.IO;
 using System.Reflection;
 using OpenQA.Selenium.Firefox;
 
-namespace Framework
+namespace SeleniumTest
 {
     public enum Drivers
     {
@@ -14,7 +14,7 @@ namespace Framework
         Firefox,
         IE
     }
-    public static class Browser
+    public class Browser
     {
 
         private static IWebDriver _webDriver;
@@ -34,7 +34,7 @@ namespace Framework
             {
                 case Drivers.Chrome:
                     var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                    var relativePath = @"..\..\..\Framework\Drivers";
+                    var relativePath = @"..\..\..\SeleniumTest\Drivers";
                     var chromeDriverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
                     return new ChromeDriver(chromeDriverPath);
                 case Drivers.Firefox:
